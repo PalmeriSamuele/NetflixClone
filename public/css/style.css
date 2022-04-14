@@ -8,15 +8,16 @@ body{
 
 	font-size: 32px;
 	color: white;
-	margin-left: 20px;
 	width: 105px;
-	position: relative;
-	margin-bottom:10px;
+	margin-left: 4rem;
+
 	
 }
+
+
 .sign_in_button {
 	margin-left: 1rem;
-	background-color: rgb(194, 164, 164);
+	background-color: #dc1a28;
 	height: 100px;
 	border-radius: 3px;
 	padding: 6px;
@@ -24,21 +25,9 @@ body{
 
 .sign_in_button:hover {
     background-color: #dc1a28;
-    animation: bounces_sign_in ease 1s;
     
 }
 
-@keyframes bounces_sign_in {
-    0% {
-    transform: scale(1);
-    }
-    10% {
-        transform: scale(1.4);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
 a {
 	text-decoration: none;
 	color: white;
@@ -48,37 +37,38 @@ li {
 	list-style-type: none;
 }
 header {
-	height: 100px;
+	height: 75px;
     width: 100%;
-    position: absolute;
-    top: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
     z-index: 2;
+	transition: ease 1s;
+	display: grid;
+	grid-template-rows: 1fr;
+	align-items: center;
 }
 .menu {
 	display: flex;
 }
 nav {
-
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
 	
+	align-items: center;
 }
 nav li {
-	margin: 20px;
 	margin-right: 10px;
 	font-size: 16px;
 }
 .menuAll {
+
 	display: flex;
-    
-}
-
-.menuAll form {
+	justify-content: center;
 	margin-right: 20px;
-	margin-top: 30px;
-
+	margin-top: 20px;
 }
+
 
 .nav_search {
 
@@ -88,7 +78,7 @@ nav li {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100px;
+
 }
 .logo {
 	width: 100px;
@@ -101,7 +91,7 @@ nav li {
 
 main {
     background-color: #080404;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 75px);
     
 }
 
@@ -113,23 +103,54 @@ main {
 .carousel-inner {
     position: relative;
 }
+
+.films_desc {
+	left: 5%;
+	top: 15%;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+}
+
+.main_button {
+
+	display: flex;
+
+}
 .main_titre {
     font-size: 6rem;
-    position: absolute;
-    top: 15%;
     color: rgb(202, 196, 196);
-    left: 5%;
     font-family: 'Abril Fatface', cursive;
 }
 
 .main_synopsis{
-    position: absolute;
-    top: 40%;
+	margin-top: 2.5rem;
     color: #ccc;
-    left: 5%;
     width: 30rem;
     text-align: justify;
 
+}
+
+.lecture_button, .liste_button {
+	color: #ccc;
+	background-color: rgba(79, 75, 75, 0.573);
+	padding: 0.5rem;
+	width: 7rem;
+	text-align: center;
+	font-weight: bold;
+	font-size: small;
+	border-radius: 2px;
+	margin-top: 2rem;
+}
+
+.liste_button:hover, .lecture_button:hover {
+	color: black;
+	background-color: white;
+
+}
+
+.liste_button {
+	margin-left: 4rem;
 }
 
 
