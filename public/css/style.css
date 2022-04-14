@@ -110,6 +110,27 @@ main {
     height: 100%;
 }
 
+.carousel-inner {
+    position: relative;
+}
+.main_titre {
+    font-size: 6rem;
+    position: absolute;
+    top: 15%;
+    color: rgb(202, 196, 196);
+    left: 5%;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.main_synopsis{
+    position: absolute;
+    top: 40%;
+    color: #ccc;
+    left: 5%;
+    width: 30rem;
+    text-align: justify;
+
+}
 
 
 
