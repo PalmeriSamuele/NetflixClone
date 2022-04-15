@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+    color: white;
+    font-size: large;
+    
+
+}
+.recommandation{
+    color: rgb(255, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style:normal;
+    font-weight: 500;
+    width: 200px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+.auteur{
+    color: white;
+    line-height: 0px;
+    float: right;
+}
+.description{
+    color: white;
+}
