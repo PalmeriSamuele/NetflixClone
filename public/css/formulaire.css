@@ -1,6 +1,6 @@
 
 body{
-    background-image: url("/public/img/imagenetflix2.pnj.jpg");
+    background-image: url("../img/imagenetflix2.pnj.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin:0;

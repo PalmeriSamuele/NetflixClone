@@ -25,7 +25,15 @@
                 <ul class="menu">
                     <li><a href="#">Films</a></li>
                     <li><a href="#">Series</a></li>
-                    <li><a class="profil_user" href="#">Samuele</a></li>
+              
+                    <li>
+                      
+                      <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Samuele
+                      </a>
+
+                    </li>
+
                     <li> <input class="nav_search" type="search" name="q" placeholder="recherche"></li>
                     <li><a class="sign_in_button" href="public/page/formulaire.html">S'inscrire</a></li>
                 </ul>
@@ -131,7 +139,41 @@
     <footer class="container-fluid">
       Copyright © Samuele Khalil 2022
     </footer>
-
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog ">
+        <div class="modal-content  light text-light">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Profil de <span class="profil_name">Samuele</span></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h3 class="modal_title">Qui est-ce ?</h3>
+            <div class="users_box">
+              <div class="user">
+                <img src="public/img/user_img_netflix.png" alt="">
+                <p>Samuele</p>
+              </div>
+              <div class="user">
+                <img src="public/img/user2.png" alt="">
+                <p>Khalil</p>
+              </div>
+              <div class="user">
+                <img src="public/img/user3.png" alt="">
+                <p>Cactus</p>
+              </div>
+              <div class="user">
+                <img src="public/img/add_user.png" alt="">
+                <p>Ajouter un p...</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>

@@ -228,6 +228,44 @@ main {
 	box-shadow: -2px 11px 15px -4px rgba(255,255,255,0.26);
 }
 
+/*MODAL*/
+
+.modal {
+	background-color: rgba(90, 86, 86, 0.203);
+	border: none;
+}
+.modal_title {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.users_box {
+	display: flex;
+	justify-content: space-evenly;
+
+}
+
+.modal-content {
+	background-color: black;
+}
+.modal-header,.modal-footer {
+	border: none;
+}
+
+.user img {
+	width: 5rem;
+	height: 5rem;
+}
+.user p {
+	color: #ccc;
+	font-size: 0.9rem;
+	margin-top: 0.5rem;
+	text-align: center;
+}
+
+.profil_name {
+	color: #dc1a28;
+}
+
 
 footer {
 	margin-top: 100vh;
