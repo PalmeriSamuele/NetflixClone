@@ -9,31 +9,23 @@ window.onscroll = function() {
     }
 }
 
-/*
-window.addEventListener('scroll', function(e) {
-    console.log(window.scrollY)
-    window.requestAnimationFrame(function() {
-        if (window.scrollY >= 20) {
-            if (document.getElementsByTagName("header") != undefined) {
-                document.getElementsByTagName("header").style.backgroundColor = "black";
-            }
-        }
-    });
-
-});
 
 
+var films_items = document.getElementById("films_slider").children;
+console.log(films_items);
 
-
-
-/*
-function headerChangeColor() {
-    window.addEventListener('scroll', function(e) {
-        console.log(window.scrollY)
-        if (window.scrollY >= 20) {
-            document.getElementsByTagName('header').style.backgroundColor = "black";
-        }
-    });
+for(var i=7;i< films_items.length;i++) {
+    films_items[i].style.display = "none"
 }
-*/
+
+function sliderFilms(){
+    for(var i=0;i< films_items.length;i++) {
+        films_items[i].style.left = "200px"
+        if (i>=8) {
+            films_items[i].style.display = "block"
+        }
+    }
+}
+
+
 

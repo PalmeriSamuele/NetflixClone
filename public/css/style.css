@@ -2,6 +2,7 @@ body{
 	margin: 0px;
 	padding: 0px;
     font-family: 'Gotham', sans-serif;
+	background-color: black;
 }
 
 .logo-img {
@@ -153,7 +154,45 @@ main {
 	margin-left: 4rem;
 }
 
+#films_slider {
+	
+	height: 10vh;
+	width: 100%;
+	position: absolute;
+	top: 92%;
+	left: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
 
+.films_slider2 {
+		
+	height: 10vh;
+	width: 100%;
+	position: absolute;
+	top: 135%;
+	left:0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	
+}
+
+.up_slider_button {
+	background-color: blue;
+	padding: 2rem;
+}
+.down_slider_button {
+	width: fit-content;
+	height: fit-content;
+}
+
+.films_slider_item {
+	height: 12rem;
+	width: 10rem;
+	background-color: red;
+}
 
 
 footer {
