@@ -10,21 +10,45 @@ window.onscroll = function() {
 }
 
 
-
 var films_items = document.getElementById("films_slider").children;
-console.log(films_items);
-
-for(var i=7;i< films_items.length;i++) {
+var films_items2 = document.getElementById("films_slider2").children;
+var count = 0;
+for(let i=7;i< films_items.length;i++) {
     films_items[i].style.display = "none"
 }
+for(let i=7;i< films_items2.length;i++) {
+    films_items2[i].style.display = "none"
+}
+
+
+
 
 function sliderFilms(){
-    for(var i=0;i< films_items.length;i++) {
-        films_items[i].style.left = "200px"
-        if (i>=8) {
-            films_items[i].style.display = "block"
+    if (count%2 == 0)  {
+        for(let i=0;i<films_items.length;i++) {
+            films_items[i].style.display = "none";
+            if (i>=8) {
+                films_items[i].style.display = "flex";
+              
+            }
+     
         }
+        count++;
     }
+    else {
+        for(let i=0;i<films_items.length;i++) {
+            films_items[i].style.display = "flex";
+            films_items[i].style.justifyContent = "space-evenly";
+            if (i>=8) {
+                films_items[i].style.display = "none";
+              
+            }
+     
+        }
+
+        count++;
+    }
+
 }
 
 
