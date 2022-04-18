@@ -10,46 +10,41 @@ window.onscroll = function() {
 }
 
 
-var films_items = document.getElementById("films_slider").children;
-var films_items2 = document.getElementById("films_slider2").children;
-var count = 0;
-for(let i=7;i< films_items.length;i++) {
-    films_items[i].style.display = "none"
-}
-for(let i=7;i< films_items2.length;i++) {
-    films_items2[i].style.display = "none"
-}
 
 
-
-
-function sliderFilms(){
-    if (count%2 == 0)  {
-        for(let i=0;i<films_items.length;i++) {
-            films_items[i].style.display = "none";
-            if (i>=8) {
-                films_items[i].style.display = "flex";
-              
-            }
-     
-        }
-        count++;
-    }
-    else {
-        for(let i=0;i<films_items.length;i++) {
-            films_items[i].style.display = "flex";
-            films_items[i].style.justifyContent = "space-evenly";
-            if (i>=8) {
-                films_items[i].style.display = "none";
-              
-            }
-     
-        }
-
-        count++;
+document.getElementById('link_k').onclick = function() {
+    var khalil = document.getElementById('user_khalil').innerHTML;
+    var current_user = document.getElementById('profil_name').innerHTML;
+    if (current_user != khalil) {
+        current_user = khalil;
+        document.getElementById('to_change_name').innerHTML = khalil;
+        document.getElementById('profil_name').innerHTML = khalil;
     }
 
 }
+
+document.getElementById('link_c').onclick = function() {
+    var current_user = document.getElementById('profil_name').innerHTML;
+    var cactus = document.getElementById('user_cactus').innerHTML;
+    if (current_user != cactus) {
+        current_user = cactus;
+        document.getElementById('to_change_name').innerHTML = cactus;
+        document.getElementById('profil_name').innerHTML = cactus;
+    }
+
+}
+
+document.getElementById('link_s').onclick = function() {
+    var current_user = document.getElementById('profil_name').innerHTML;
+    var sam = document.getElementById('user_sam').innerHTML;
+    if (current_user != sam) {
+        current_user = sam;
+        document.getElementById('to_change_name').innerHTML = sam;
+        document.getElementById('profil_name').innerHTML = sam;
+    }
+
+}
+
 
 
 

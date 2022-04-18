@@ -28,7 +28,7 @@
               
                     <li>
                       
-                      <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      <a href="" id="to_change_name" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         Samuele
                       </a>
 
@@ -63,7 +63,7 @@
                 <div class="films_desc">
                   <h5 class="main_titre main_titre_avengers">Avengers : Endgame</h5>
                   <div class="main_button">
-                    <a class="lecture_button" href="">Lecture</a>
+                    <a class="lecture_button" href="public/page/film.html">Lecture</a>
                     <a class="liste_button" href="">Ma liste</a>
                   </div>
                   <p class="main_synopsis">Le Titan Thanos, ayant réussi à s'approprier les six Pierres d'Infinité et à les réunir sur le Gantelet doré, a pu réaliser son objectif de pulvériser la moitié de la population de l'Univers. Cinq ans plus tard, Scott Lang, alias Ant-Man, parvient à s'échapper de la dimension subatomique où il était coincé.</p>
@@ -130,9 +130,7 @@
             <div class="films_slider_item">
               <img class="films_item_img"  src="public/img/films/iJFbGer.jpg" alt="">
             </div>
-            <div class="films_slider_item">
-              <img class="films_item_img"  src="public/img/films/zV5ol27.jpg" alt="">
-            </div>
+     
 
           </div>
     </main>
@@ -141,36 +139,43 @@
     </footer>
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog ">
-        <div class="modal-content  light text-light">
+      <div class="modal-dialog  text-light">
+        <div class="modal-content   text-light">
           <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Profil de <span class="profil_name">Samuele</span></h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title to_change_name" id="staticBackdropLabel">Profil de <span id="profil_name">Samuele</span></h5>
+            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <h3 class="modal_title">Qui est-ce ?</h3>
             <div class="users_box">
               <div class="user">
-                <img src="public/img/user_img_netflix.png" alt="">
-                <p>Samuele</p>
+                <a href="" id="link_s" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                  <img src="public/img/user_img_netflix.png"  class="click_change_users" alt="">
+                  <p id="user_sam">Samuele</p>
+                </a>
               </div>
               <div class="user">
-                <img src="public/img/user2.png" alt="">
-                <p>Khalil</p>
+                <a href="javascript:void(0);" id="link_k" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                  <img src="public/img/user2.png" alt="">
+                  <p id="user_khalil">Khalil</p>
+                </a>
+               
               </div>
               <div class="user">
-                <img src="public/img/user3.png" alt="">
-                <p>Cactus</p>
+                <a href="javascript:void(0);" id="link_c" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                  <img src="public/img/user3.png"  class="click_change_users"  alt="">
+                  <p id="user_cactus">Cactus</p>
+                </a>
               </div>
               <div class="user">
-                <img src="public/img/add_user.png" alt="">
-                <p>Ajouter un p...</p>
+                <a href="" >
+                  <img src="public/img/add_user.png" alt="">
+                  <p>Ajouter un p...</p>
+                </a>
               </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
+          
         </div>
       </div>
     </div>
